@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Natal Amor!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope" onclick="abrirCarta()">
+            <div class="tampa"></div>
+            <div class="corpo">
+                <div class="coracao"></div>
+            </div>
+            <div class="carta">
+                <p id="texto"></p>
+            </div>
+            <div id="modalFotos" class="modal" onclick="fecharModal()">
+                <img id="fotoAtual" onclick="event.stopPropagation()">
+                <span class="fechar" onclick="fecharModal(); event.stopPropagation()">✖</span>
+            </div>
+        </div>
+        <p class="hint">Clique na Carta!</p>
+    </div>
+    <div class="player">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
