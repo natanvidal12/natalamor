@@ -110,3 +110,6 @@ function mostrarFotoAleatoria() {
     document.getElementById("fotoAtual").src = fotos[indiceAleatorio];
 }
 
+function mostrarForm() {
+  document.getElementById("form-area").style.display = "block";
+}

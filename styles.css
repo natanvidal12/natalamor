@@ -156,3 +156,102 @@ body{
 .modal[style*="display: none"] {
     pointer-events: none;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn-contrato {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #c4002f, #ff1744);
+    color: white;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(196, 0, 47, 0.4);
+}
+
+.btn-contrato:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(196, 0, 47, 0.6);
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 117, 252, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 117, 252, 0.6);
+}
+
+#form-area {
+    margin-top: 20px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 100%;
+}
+
+#form-area form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#form-area label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#form-area input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#form-area textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+#form-area textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#form-area textarea:focus {
+    outline: none;
+    border-color: #c4002f;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+#form-area button[type="submit"] {
+    background: linear-gradient(135deg, #c4002f, #ff1744);
+    margin-top: 0;
+}
