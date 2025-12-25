@@ -43,7 +43,7 @@
 
   <br><br>
 
-  <textarea name="mensagem" placeholder="Pode falar gatinha..." rows="4"></textarea>
+  <textarea name="mensagem" placeholder="" rows="4"></textarea>
 
   <br><br>
 
@@ -59,7 +59,7 @@
 const form = document.getElementById("contratoForm");
 
 form.addEventListener("submit", function (e) {
-  e.preventDefault(); // impede redirecionamento
+  e.preventDefault();
 
   fetch("https://formsubmit.co/ajax/natanvidal0313131@gmail.com", {
     method: "POST",
